@@ -1,0 +1,33 @@
+button{
+    background-color: #776B5D;
+    color: #EBE3D5;
+    width: 50%;
+    height: 30%;
+}
+button:hover{
+    background-color:#EBE3D5 ;
+    color: #776B5D;
+   
+}
+.position{
+    color: #776B5D;
+}
+body{
+    background-color: #F3EEEA;
+    font-size: 30px;
+}
+.pic{
+    width: 400px;
+    height: 300px;
+}
+.fav button{
+    background-color: #776B5D;
+    color: #EBE3D5;
+    width: 80%;
+    height: 90%;
+}
+.fav button:hover{
+    background-color:#EBE3D5 ;
+    color: #776B5D;
+   
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Amatic+SC&family=Montserrat:wght@400;600&family=Open+Sans:wght@300&family=Roboto:wght@300;400&family=Source+Sans+3:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Montserrat/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cherry.css">
+</head>
+
+<body>
+    <!-- justify-content-end  -->
+    <section class="d-flex p-3 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contain">
+                        <div class="p-5">
+<form action=""> 
+
+                    <div class="bg-white p-4 shadow" id="form" onsubmit="addData(event)">
+                                <div class="image-container d-flex justify-content-center align-items-center">
+                                    <img src="css/abstract-colorful-bird_621127-276.avif" alt=""
+                                        class="img-fluid">
+                                </div>
+                                <h1 class="text-center">registration form</h1>
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label w-50">Name</label>
+                                    <input type="text" class="form-control" id="userName"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                        else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordInput" class="form-label" oninput="validatePassword(password)">Password</label>
+                                    <input type="password" class="form-control" id="userPassword">
+                                    <div id="warningpass"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="userEmail">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="numberInput" class="form-label" oninput="validatePhoneNumber(phoneNumber)">Phone number</label>
+                                    <input type="number" class="form-control is-valid" id="userNumber">
+                                    <div id="warning"></div>
+                                </div>
+
+                                <button type="submit" onclick="addData(event)" class="btn mybtn btn-primary" id="mybtn" >Submit</button>
+                                <button type="reset" class="btn btn-primary">reset</button>
+
+                                <button class="btn btn-primary" onclick="display(userData)">Display</button> 
+            </div>
+        </form>                   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="" id="userData">
+                        <div>
+                            <table class="table">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="css/bootstrap.bundle.js"></script>
+    <script src="cherry.js"></script>
+</body>
+
+</html>
